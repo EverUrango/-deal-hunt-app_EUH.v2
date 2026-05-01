@@ -74,7 +74,10 @@ class DatabaseHelper {
           'category_id' : 'food',
           'store_name' : 'PizzaHot',
           'image_url' : null,
-          'coupon_code': 'PIZZA50'
+          'coupon_code': 'PIZZA50',
+          'expiration_date': now.add(const Duration(days: 15)).toIso8601String(),
+          'is_favorite': 1,
+          'created_at': now.toIso8601String(),
        },
        {
         'title': '30% en Auriculares Sony',
